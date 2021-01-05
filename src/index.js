@@ -1,5 +1,5 @@
 /* DOM Elements */
-const recipeImage = document.querySelector("re")
+//const recipeImage = document.querySelector("re")
 
 /* Render Functions */
 
