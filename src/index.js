@@ -1,6 +1,7 @@
 /* DOM Elements */
 const activityTitle = document.querySelector("#activity-title")
 const activityImage = document.querySelector("#activity-picture")
+const activityComment = document.querySelector("#activity-comment")
 //const recipeImage = document.querySelector("re")
 
 /* Render Functions */
@@ -14,9 +15,15 @@ const getOneActivity = id => {
             activityTitle.innerHTML = data.title
             activityImage.src = data.image_url
             activityImage.alt = data.title
-      
-})
-}
+            
+            data.comments.forEach(element => {
+                const newLi = document.createElement("li")
+                newLi.innerHTML = element.content
+                console.log(newLi)
+                activityComment.append(newLi)
+            })
+        })
+    }
 
 /* Initialize */
-getOneActivity(24)
+getOneActivity(42)
