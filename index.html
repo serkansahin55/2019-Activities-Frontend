@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-  <h1> 2019</h1>
+  <h1 class="title-of-website">2019</h1>
   </header>
 <br>
 <br>
@@ -31,22 +31,27 @@
 
 <div id="activity-detail">
   <img class="detail-image" src="https://blog.nasm.org/hubfs/cleangym%20%281%29.jpg" alt="Insert Name Here" />
-  <h1 class="name">Insert Title Here</h1>
+  <h2 id="name">Insert Title Here</h2>
 </div>
 
-  </nav>
-  <main>
-    <!-- <img id="activity-picture" src="https://media.timeout.com/images/104089106/750/422/image.jpg" alt="placeholder" style="max-width: 200px;"/> -->
-    <hr>
+<div id="activity-comments">
+  <h2 class="comment">Comments</h2>
 
-      <hr>
-      <hr>
-      <h3>Comments</h3>
-      <ul>
-        <li>Activity 1</li>
-        <li>Activity 2</li>
-        <li>Activity 3</li>  
-      </ul>
-  </main>
+  <div id="activity">
+    <h4 id="activity"></h4>
+    <ul id="comments-list">
+      <li></li>
+    </ul>
+  </div>
+</div>
+
+</div>
+  <form id="activity-form" data-id="insert activity ID" autocomplete="off">
+    <label for="name">Comment here:</label>
+    <input type="text" name="name" id="activity-name" />
+    <input type="submit" value="Add Comment" />
+  </form>
 </body>
 </html>
+
+

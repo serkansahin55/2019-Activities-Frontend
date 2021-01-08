@@ -1,6 +1,20 @@
-// See all activities names in a `div` with the id of `"character-bar"`. On page load, **request** data from the server to get all of the activities objects. When you have this information, you'll need to add a `span` tag with the character's name to the activity bar.
 
 
+const activityForm = document.querySelector("#activity-form")
+const commentsList = document.querySelector("#comments-list")
+
+
+
+activityForm.addEventListener("submit", event => {
+    event.preventDefault()
+    const activityName = event.target.name.value
+
+
+    const li = document.createElement("li")
+    li.textContent = activityName
+    commentsList.append(li)
+
+})
 
 
 
@@ -18,9 +32,11 @@ const renderImage = activity => {
 }
 
 
+
 const renderAllActivities = activityArray => {
     activityArray.forEach(renderImage)
 }
+
 
 
 const renderDetail = activity => {
@@ -28,10 +44,20 @@ const renderDetail = activity => {
     img.src = activity.image_url
     img.alt = activity.title
 
-    const h2 = document.querySelector(".name")
+    const h2 = document.querySelector("#name")
     h2.textContent = activity.title
 
+    // This is as far as i got last night.
+    const li = document.createElement("li")
+    li.textContent = activity.comments
+    commentsList.append(li)
+
+
+    
+
 }
+
+
 
 const getActivity = id => {
     fetch(`http://localhost:3000/api/v1/activities/${id}`)

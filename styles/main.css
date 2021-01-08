@@ -77,3 +77,27 @@ header {
   color: white;
   background-color: black;
 }
+
+h3 {
+  text-align:center;
+}
+
+
+
+h4 {
+  text-align:center;
+}
+
+
+.activityList {
+  text-align:center;
+}
+
+.comment {
+  text-align:center;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
