@@ -4,27 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel ="stylesheet" href="./styles/main.css">
+  <style>
+    img{
+        max-width: 25%;
+        max-height: 200%;
+        display: block; /* remove extra space below image */
+    }
+    </style>
+    <body style="background-color: aquamarine;"></body>
   <script src="./src/index.js" defer></script>
   <title>Document</title>
 </head>
 <body>
   <header>
-    <h2>2019</h2>
+  <h1> 2019</h1>
   </header>
-  <nav>
-    <ul>
-      <button id="activityButton">Press for Activity 1!</button>
-      <button id="activityButton">Press for Activity 2!</button>
-      <button id="activityButton">Press for Activity 3!</button>
-    </ul>
+<br>
+<br>
+<br>
+<div id = "activity-bar">
+
+</div>
+<hr>
+<br>
+<br>
+
+<div id="activity-detail">
+  <img class="detail-image" src="https://blog.nasm.org/hubfs/cleangym%20%281%29.jpg" alt="Insert Name Here" />
+  <h1 class="name">Insert Title Here</h1>
+</div>
+
   </nav>
   <main>
-    <img id="activity-picture" src="https://media.timeout.com/images/104089106/750/422/image.jpg" alt="placeholder" style="max-width: 500px;"/>
+    <!-- <img id="activity-picture" src="https://media.timeout.com/images/104089106/750/422/image.jpg" alt="placeholder" style="max-width: 200px;"/> -->
     <hr>
-    <h1 id="activity-title">Activity Title</h1>
+
       <hr>
       <hr>
-      <h3>Activities</h3>
+      <h3>Comments</h3>
       <ul>
         <li>Activity 1</li>
         <li>Activity 2</li>
@@ -33,4 +50,3 @@
   </main>
 </body>
 </html>
-
