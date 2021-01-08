@@ -101,3 +101,9 @@ input[type="submit"] {
   display: block;
   margin: 0 auto;
 }
+
+img{
+  max-width: 25%;
+  max-height: 200%;
+  display: block; /* remove extra space below image */
+}
