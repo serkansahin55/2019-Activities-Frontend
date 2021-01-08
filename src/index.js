@@ -48,9 +48,9 @@ const renderDetail = activity => {
     h2.textContent = activity.title
 
     // This is as far as i got last night.
-    const li = document.createElement("li")
-    li.textContent = activity.comments
-    commentsList.append(li)
+    // const li = document.createElement("li")
+    // li.textContent = activity.comments
+    // commentsList.append(li)
 
 
     
